@@ -13,7 +13,7 @@ git clone https://github.com/nemtech/catapult-server.git -b master --depth 1 \
   && make publish && make -j4 && cd -
 
 
-cd catapult-server \
+cd proximax-catapult-server \
   && patch -p1 < ../patch/config-user.patch \
   && mkdir -p seed/mijin-test \
   && mkdir data \
