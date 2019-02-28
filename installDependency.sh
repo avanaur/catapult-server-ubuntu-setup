@@ -40,7 +40,7 @@ git clone https://github.com/google/googletest.git -b release-1.8.0 --depth 1 \
   && cd -
 
 git clone https://github.com/google/benchmark.git google.benchmark.git -b v1.4.1 --depth 1 \
-  && cd google.benchmark.git && mkdir _build && cd _build
+  && cd google.benchmark.git && mkdir _build && cd _build \
   && cmake -DCMAKE_BUILD_TYPE=Release -DBENCHMARK_ENABLE_GTEST_TESTS=OFF .. && make -j4 && make install \
   && cd - && rm -rf google.benchmark.git
 
