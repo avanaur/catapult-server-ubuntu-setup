@@ -44,7 +44,7 @@ git clone https://github.com/google/benchmark.git google.benchmark.git -b v1.4.1
   && cmake -DCMAKE_BUILD_TYPE=Release -DBENCHMARK_ENABLE_GTEST_TESTS=OFF .. && make -j4 && make install \
   && cd - && rm -rf google.benchmark.git
 
-git clone https://github.com/facebook/rocksdb.git -b v5.12.4 --depth 1 \
+git clone https://github.com/facebook/rocksdb.git -b 5.18.fb --depth 1 \
   && mkdir -p rocksdb/_build && cd rocksdb/_build \
   && cmake -DCMAKE_INSTALL_PREFIX=/usr/local .. && make -j4 && make install \
   && cd -
